@@ -1,3 +1,8 @@
+@font-face {
+    font-family: dogica;
+    src: url(fonts/dogica.otf);
+}
+
 body {
     margin: 0;
 }
@@ -14,8 +19,8 @@ a {
     text-align: center;
     background-color: #0C0707;
     margin: 0px;
-    padding-top: 1%;
-    padding-bottom: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #adam-games-logo {
@@ -29,7 +34,7 @@ a {
     margin: 0px;
     background-color: #DC4144;
     width: 100%;
-    height: 60px;
+    height: 70px;
 
 }
 
@@ -44,16 +49,20 @@ a {
     display: inline-block;
     border: 2px solid #E67A7C;
     width: 200px;
-    height: 40px;
+    height: 50px;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 15px;
     margin-left: 5px;
     margin-right: 5px;
+    font-family: dogica;
 }
 
 
-.single-link {}
+.single-link { color: white; }
+
+.nav-bar-list-components:hover { border: 2px solid white; }
 
 #current-page {
-    color: white;
+    border: 2px solid white;
+    background-color: #E05457;
 }
