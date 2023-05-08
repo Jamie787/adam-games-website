@@ -3,12 +3,15 @@
     src: url(fonts/dogica.otf);
 }
 
-body {
-    margin: 0;
+@font-face {
+    font-family: dogica;
+    src: url(fonts/dogicabold.otf);
+    font-weight: bold;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0px;
 }
 
 a {
@@ -18,7 +21,6 @@ a {
 .heading-logo {
     text-align: center;
     background-color: #0C0707;
-    margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -31,16 +33,14 @@ a {
 
 .nav-bar {
     top: 0;
-    margin: 0px;
     background-color: #DC4144;
     width: 100%;
     height: 70px;
-
+    position: sticky;
 }
 
 #link-list {
     list-style-type: none;
-    margin: 0px;
     text-align: center;
     padding-top: 10px;
 }
@@ -65,4 +65,49 @@ a {
 #current-page {
     border: 2px solid white;
     background-color: #E05457;
+}
+
+.front-page {
+    width: 100%;
+    height: 600px;
+    background: url('site%20images/game%20collage.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#front-image {
+    height: auto;
+    width: 400px;
+    image-rendering: pixelated;
+}
+
+.header {
+    font-family: dogica;
+    font-weight: bold;
+    width: 100%;
+    height: 80px;
+    background-color: #DC4144;
+    color: white;
+    font-size: larger;
+}
+
+h2 {
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.body {
+    background-color: #0C0707;
+    color: white;
+    font-family: Roboto Mono, monospace;
+
+}
+
+p {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 75px;
+    padding-bottom: 75px;
 }
