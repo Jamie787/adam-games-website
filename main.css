@@ -82,6 +82,13 @@ a {
     image-rendering: pixelated;
 }
 
+#front-text {
+    font-size: 100px;
+    color: white;
+    font-family: dogica;
+    font-weight: bold;
+}
+
 .header {
     font-family: dogica;
     font-weight: bold;
@@ -110,4 +117,44 @@ p {
     padding-top: 75px;
     padding-bottom: 75px;
     font-size: 20px;
+}
+
+.footer {
+    height: 300px;
+    width: 100%;
+    background-color: #222222;
+    border-top: 25px solid #C63134;
+    
+}
+
+#footer-image {
+    height: max-content;
+    width: 350px;
+    image-rendering: pixelated;
+    padding-top: 50px;
+    padding-left: 50px;
+    float: left;
+}
+
+.contact-list {
+    color: white;
+    list-style-type: none;
+    font-size: 30px;
+    font-family: Roboto Mono, monospace;
+    text-align: right;
+}
+
+.footer-list-components {
+    color: white;
+    padding-right: 200px;
+}
+
+.footer-list-heading {
+    color: white;
+    padding-right: 200px;
+    padding-top: 50px;
+}
+
+.footer-list-components:hover {
+    color: #C63134;
 }
