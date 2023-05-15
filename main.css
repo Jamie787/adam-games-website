@@ -226,3 +226,14 @@ h3 {
 }
 
 #publish-button:hover {border: 2px solid white;}
+
+.header-small {
+    width: 100%;
+    height: 300px;
+    background-color: #C63134;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
