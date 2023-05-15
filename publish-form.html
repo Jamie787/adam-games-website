@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Publishing | Adam Games</title>
+    <title>Publishing Form | Adam Games</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
 </head>
@@ -27,15 +27,116 @@
     </div>
     <div class="header"></div>
     <div class="body">
-        <p style="text-align: center;">Please complete the form below to express interest in publishing.</p>
-        <p style="text-align: center;">Introduction</p>
+        <p style="text-align: center; font-size: xx-large;">Please complete the form below to express interest in publishing.</p>
+        <div class="publish-form">
+            <form action="post-form.html" method="get">
+                <div class="form-header">Introduction</div>
+                <div class="duel-input-div"><input class="duel-input" type="text" name="first-name" placeholder="First Name*" required><input class="duel-input" type="text" name="last-name" placeholder="Last Name*" required></div>
+                <div class="single-input-div"><input class="single-input" type="email" name="email" placeholder="Email*" required></div>
+                <div class="single-input-div"><input class="single-input" type="text" name="country" placeholder="Country*" required></div>
+                <div>
+                    <div class="textarea-label">About You: *</div>
+                    <textarea name="about-you" class="single-input" cols="30" rows="10" maxlength="1000" required></textarea>
+                </div>
+                
+                <div class="form-header">Developer Information</div>
+                <div class="duel-input-div"><input type="text" name="company-name" class="duel-input" placeholder="Company/Studio Name"><input type="text" name="website" class="duel-input" placeholder="Website"></div>
+                <div class="duel-input-div"><input type="text" name="team-size" class="duel-input" placeholder="Team Size*" required><input type="text" name="social-media" class="duel-input" placeholder="Social Media"></div>
+                <div>
+                    <div class="textarea-label">Past Projects/Experience: *</div>
+                    <textarea name="past-work" class="single-input" cols="30" rows="10" maxlength="1000" required></textarea>
+                </div>
 
-        <form class="">
-            <input type="text" name="first-name" placeholder="First Name"> <input type="text" name="last-name" placeholder="Last Name">
-            <br><input type="text" name="email" placeholder="Email">
-            <br><input type="text" name="country" placeholder="Country">
-        </form>
-
+                <div class="form-header">Game Information</div>
+                <div class="duel-input-div"><input type="text" name="game-name" class="duel-input" placeholder="Game Name"><input type="text" name="game-genre" class="duel-input" placeholder="Game Genre"></div>
+                <div class="checkbox-label">Publishing Needs:</div>
+                <div class="checkbox-container">
+                    <label class="checkbox">Marketing
+                        <input type="checkbox" name="needs-marketing">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">Funding
+                        <input type="checkbox" name="needs-funding">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">PR, Community
+                        <input type="checkbox" name="needs-pr">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">Porting
+                        <input type="checkbox" name="needs-porting">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">Localisation
+                        <input type="checkbox" name="needs-localise">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">QA
+                        <input type="checkbox" name="needs-qa">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">Other
+                        <input type="checkbox" name="needs-other">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div>
+                    <div class="textarea-label">Game Description: *</div>
+                    <textarea name="game-description" class="single-input" cols="30" rows="10" maxlength="1000" required></textarea>
+                </div>
+                <div class="checkbox-label">Supported Platform(s):</div>
+                <div class="checkbox-container">
+                    <label class="checkbox">PC
+                        <input type="checkbox" name="platform-pc">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="checkbox">Console(s)
+                        <input type="checkbox" name="platform-console">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="duel-input-div"><input type="text" name="game-website" class="duel-input" placeholder="Game Website Link"><input type="text" name="game-socials" class="duel-input" placeholder="Game Social Media"></div>
+                <div class="duel-input-div"><input type="text" name="gameplay-vid" class="duel-input" placeholder="Gameplay Video Link"><input type="text" name="game-build" class="duel-input" placeholder="Game Build Link"></div>
+                <div class="duel-input-div">
+                        <select name="release-quarter" class="duel-input"  required>
+                            <option value="none">Select Quarter of Release</option>
+                            <option value="q1">Q1</option>
+                            <option value="q2">Q2</option>
+                            <option value="q3">Q3</option>
+                            <option value="q4">Q4</option>
+                        </select>
+                    <select name="release-year" class="duel-input">
+                        <option value="none">Select Year of Release</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value=">2027">Past 2027</option>
+                    </select>
+                </div>
+                <div class="single-input-div"><input type="number" class="single-input" name="funding-amount" placeholder="Funding Required (Australian Dollars)*"></div>
+                
+                <div class="form-header">Agreements</div>
+                <label class="checkbox">I agree that I am 18 years of age or older.
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">I confirm that my game does not include any use of NFTs, crypto, or blockchain technology.
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="checkbox">I am granting Adam Games the right to use this data for the purpose of assessing my application and I understand my personal information is only collected and used by Bigmode internally.
+                    <input type="checkbox" required>
+                    <span class="checkmark"></span>
+                </label>
+                
+                <div class="submit-button-container">
+                    <button type="submit" name="submit" class="submit-button">Submit Form</button>
+                </div>
+                
+            </form>
+        </div>
     </div>
 
     <div class="footer">
