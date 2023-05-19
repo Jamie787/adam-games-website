@@ -225,7 +225,10 @@ h3 {
     font-size: larger;
 }
 
-#publish-button:hover {border: 2px solid white;}
+#publish-button:hover {
+    border: 2px solid white;
+    background-color: #E05457;
+}
 
 .header-small {
     width: 100%;
@@ -393,4 +396,5 @@ textarea:focus {
 
   .submit-button:hover {
     background-color: #C63134;
+    
   }
